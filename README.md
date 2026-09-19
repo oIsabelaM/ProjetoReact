@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Projeto React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto da disciplina de Programação Web: uma aplicação React com cinco funcionalidades, versionada com Git e publicada na Vercel.
 
-## Available Scripts
+## Links
 
-In the project directory, you can run:
+- Repositório: https://github.com/oIsabelaM/ProjetoReact
+- Site online: https://meu-projeto-react-tau.vercel.app/
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Funcionalidade | O que faz | Conceitos usados |
+|---|---|---|
+| To-Do List | Adiciona, marca como feita e remove tarefas | `useState`, formulário, `map`, `filter` |
+| Contador de Cliques | Soma cliques e zera o contador | `useState`, `onClick` |
+| Jogo da Velha | Jogo para dois jogadores, com vencedor e empate | `useState`, lista de 9 posições |
+| Calculadora | Soma, subtração, multiplicação e divisão | `useState`, lógica de operações |
+| Buscador de CEP | Consulta endereço pela API ViaCEP | `fetch`, `async/await`, `try/catch` |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estrutura
 
-### `npm test`
+- `src/App.js`: controla qual funcionalidade aparece na tela.
+- `src/App.css`: estilo de todo o projeto.
+- `src/components/Header.js`: cabeçalho com os cinco botões.
+- `src/components/`: um arquivo por funcionalidade.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estilização
 
-### `npm run build`
+- CSS puro em um único arquivo (`App.css`), sem biblioteca extra.
+- Paleta pastel de rosa e lilás, para um visual leve e acolhedor.
+- Fonte Nunito (Google Fonts), arredondada.
+- Cantos arredondados, sombras suaves e efeito ao passar o mouse nos botões.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React (Create React App), JavaScript, CSS, API ViaCEP, Git, GitHub e Vercel.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como executar
 
-### `npm run eject`
+1. Clone o repositório.
+2. Instale as dependências com `npm install`.
+3. Inicie com `npm start`.
+4. Acesse `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Etapas realizadas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Instalação do Node.js e criação do projeto com `npx create-react-app`.
+2. Criação do cabeçalho e da navegação entre as telas.
+3. Desenvolvimento das cinco funcionalidades, uma por vez.
+4. Aplicação do estilo pastel.
+5. Versionamento com Git: um commit e uma tag a cada funcionalidade.
+6. Envio ao GitHub.
+7. Deploy na Vercel, conectado ao repositório.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Versões (tags)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Tag | Conteúdo |
+|---|---|
+| v0.1.0 | Cabeçalho e Contador de Cliques |
+| v0.2.0 | To-Do List |
+| v0.2.1 | Novo estilo visual |
+| v0.3.0 | Calculadora |
+| v0.4.0 | Jogo da Velha |
+| v0.5.0 | Buscador de CEP |
+| v1.0.0 | Versão final com deploy e documentação |
 
-## Learn More
+## Prints das telas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### To-Do List
+![To-Do List](prints/todo.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Contador de Cliques
+![Contador de Cliques](prints/contador.png)
 
-### Code Splitting
+### Jogo da Velha
+![Jogo da Velha](prints/velha.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Calculadora
+![Calculadora](prints/calculadora.png)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Buscador de CEP
+![Buscador de CEP](prints/cep.png)
