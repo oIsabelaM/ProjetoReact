@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import TodoList from "./components/TodoList";
+import Contador from "./components/Contador";
+import JogoDaVelha from "./components/JogoDaVelha";
+import Calculadora from "./components/Calculadora";
+import BuscadorCep from "./components/BuscadorCep";
 
 function App() {
+  const [pagina, setPagina] = useState("To-Do List");
+
+  const telas = {
+    "To-Do List": <TodoList />,
+    "Contador de Cliques": <Contador />,
+    "Jogo da Velha": <JogoDaVelha />,
+    "Calculadora": <Calculadora />,
+    "Buscador de CEP": <BuscadorCep />,
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header paginaAtual={pagina} aoTrocar={setPagina} />
+      <main className="conteudo">{telas[pagina]}</main>
     </div>
   );
 }

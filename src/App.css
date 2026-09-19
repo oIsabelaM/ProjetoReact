@@ -1,38 +1,83 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f1ec;
+  color: #4a4a4a;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background: #a9bfb3;
+  padding: 20px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  margin: 0 0 14px;
+  font-size: 1.6rem;
+  color: #2f3e36;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.header button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background: #e6ede9;
+  color: #3d4d44;
+  cursor: pointer;
+  font-size: 0.95rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header button:hover {
+  background: #d3e0d8;
+}
+
+.header button.ativo {
+  background: #6f8f7d;
+  color: #ffffff;
+}
+
+.conteudo {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.numero {
+  font-size: 3.5rem;
+  margin: 10px 0 20px;
+  color: #6f8f7d;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.conteudo button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #6f8f7d;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.conteudo button:hover {
+  background: #5d7a6a;
+}
+
+.conteudo button.secundario {
+  background: #e6ede9;
+  color: #3d4d44;
 }
