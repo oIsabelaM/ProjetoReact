@@ -1,20 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap");
+
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f4f1ec;
-  color: #4a4a4a;
+  font-family: "Nunito", "Segoe UI", Arial, sans-serif;
+  background: #fff5f8;
+  color: #6b4f63;
   text-align: center;
 }
 
+/* Cabeçalho */
 .header {
-  background: #a9bfb3;
-  padding: 20px 10px;
+  background: linear-gradient(135deg, #ffd6e7, #e4d4f7);
+  padding: 24px 10px 28px;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 6px 16px rgba(247, 154, 192, 0.25);
 }
 
 .header h1 {
-  margin: 0 0 14px;
-  font-size: 1.6rem;
-  color: #2f3e36;
+  margin: 0 0 16px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #8a4b73;
 }
 
 .header nav {
@@ -26,35 +32,78 @@ body {
 
 .header button {
   border: none;
-  padding: 10px 16px;
-  border-radius: 20px;
-  background: #e6ede9;
-  color: #3d4d44;
-  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #fff5f8;
+  color: #8a4b73;
+  font-family: inherit;
+  font-weight: 600;
   font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
 }
 
 .header button:hover {
-  background: #d3e0d8;
+  background: #ffe8f1;
+  transform: translateY(-2px);
 }
 
 .header button.ativo {
-  background: #6f8f7d;
+  background: #f79ac0;
   color: #ffffff;
+  box-shadow: 0 4px 10px rgba(247, 154, 192, 0.5);
 }
 
+/* Cartão de conteúdo */
 .conteudo {
   max-width: 500px;
-  margin: 30px auto;
-  padding: 20px;
+  margin: 32px auto;
+  padding: 24px;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 28px;
+  box-shadow: 0 8px 24px rgba(182, 156, 240, 0.2);
 }
 
+.conteudo h2 {
+  margin-top: 0;
+  color: #8a4b73;
+  font-weight: 800;
+}
+
+/* Botões do conteúdo */
+.conteudo button {
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #f79ac0;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.15s;
+}
+
+.conteudo button:hover {
+  background: #f27fb0;
+  transform: scale(1.05);
+}
+
+.conteudo button.secundario {
+  background: #efe6fb;
+  color: #7a5fb0;
+}
+
+.conteudo button.secundario:hover {
+  background: #e4d4f7;
+}
+
+/* Contador */
 .numero {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
+  font-weight: 800;
   margin: 10px 0 20px;
-  color: #6f8f7d;
+  color: #f27fb0;
 }
 
 .botoes {
@@ -63,21 +112,57 @@ body {
   gap: 10px;
 }
 
-.conteudo button {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background: #6f8f7d;
-  color: #ffffff;
-  cursor: pointer;
+/* To-Do List */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 2px solid #ffd6e7;
+  border-radius: 999px;
+  font-family: inherit;
   font-size: 1rem;
+  color: #6b4f63;
+  outline: none;
+  background: #fffafc;
 }
 
-.conteudo button:hover {
-  background: #5d7a6a;
+.todo-form input:focus {
+  border-color: #f79ac0;
 }
 
-.conteudo button.secundario {
-  background: #e6ede9;
-  color: #3d4d44;
+.todo-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  background: #fff5f8;
+  border-radius: 16px;
+}
+
+.todo-lista span {
+  cursor: pointer;
+  text-align: left;
+  flex: 1;
+}
+
+.todo-lista span.feita {
+  text-decoration: line-through;
+  color: #c4b1bd;
+}
+
+.vazio {
+  color: #c4b1bd;
 }

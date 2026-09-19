@@ -9,7 +9,7 @@ const itens = [
 function Header({ paginaAtual, aoTrocar }) {
   return (
     <header className="header">
-      <h1>Projeto React</h1>
+      <h1>🌸 Projeto React 🌸</h1>
       <nav>
         {itens.map((item) => (
           <button
