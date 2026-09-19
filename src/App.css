@@ -265,3 +265,52 @@ body {
   margin-top: 4px;
 }
 
+/* Buscador de CEP */
+.cep-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cep-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 16px;
+  border: 2px solid #ffd6e7;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #6b4f63;
+  outline: none;
+  background: #fffafc;
+}
+
+.cep-form input:focus {
+  border-color: #f79ac0;
+}
+
+.conteudo button:disabled {
+  background: #e4d4f7;
+  cursor: wait;
+  transform: none;
+}
+
+.cep-erro {
+  color: #d9668f;
+  font-weight: 600;
+}
+
+.cep-resultado {
+  background: #fff5f8;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.cep-resultado p {
+  margin: 10px 0;
+}
+
+.cep-resultado strong {
+  color: #8a4b73;
+}
